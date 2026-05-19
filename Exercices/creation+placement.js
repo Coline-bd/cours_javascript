@@ -35,12 +35,13 @@ laDiv.appendChild(date);
 
 const actif=document.createElement('p');
 
-if (userData.active ==true){
-    actif.innerText='online';
-}
-else{
-    actif.innerText='offline';
-}
+actif.innerText=userData.active ? 'online' : 'offline';
+// if (userData.active ==true){
+//     actif.innerText='online';
+// }
+// else{
+//     actif.innerText='offline';
+// }
 
 laDiv.appendChild(actif);
 
@@ -48,3 +49,23 @@ laDiv.style.color='white';
 laDiv.style.width='400px';
 laDiv.style.background='linear-gradient(45deg,purple,orange)';
 laDiv.style.padding='2rem';
+
+
+
+//Exercice DOM création + placement + fonction
+const divPseudo = document.querySelector('.divPseudo');
+
+
+const ajouterTexte = function (pseudo,duTexte){
+    const pseudoGras = document.createElement('strong');
+    pseudoGras.innerText=pseudo;
+    pseudoGras.style.color='red';
+    const paragraph=document.createElement('p');
+    paragraph.appendChild(pseudoGras);
+    const phrase = ' - ' + duTexte;
+    paragraph.append(phrase);
+    divPseudo.appendChild(paragraph);
+};
+
+ajouterTexte('coline','loutre');
+ajouterTexte('juliette','licorne');
