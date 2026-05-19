@@ -34,7 +34,14 @@ date.innerText=userData.dob;
 laDiv.appendChild(date);
 
 const actif=document.createElement('p');
-actif.innerText=userData.active;
+
+if (userData.active ==true){
+    actif.innerText='online';
+}
+else{
+    actif.innerText='offline';
+}
+
 laDiv.appendChild(actif);
 
 laDiv.style.color='white';
