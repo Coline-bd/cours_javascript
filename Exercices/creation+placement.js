@@ -62,8 +62,7 @@ const ajouterTexte = function (pseudo,duTexte){
     pseudoGras.style.color='red';
     const paragraph=document.createElement('p');
     paragraph.appendChild(pseudoGras);
-    const phrase = ' - ' + duTexte;
-    paragraph.append(phrase);
+    paragraph.append(` - ${duTexte}`);
     divPseudo.appendChild(paragraph);
 };
 

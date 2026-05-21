@@ -1,0 +1,17 @@
+.couleurs{
+    color: blueviolet;
+    background-color: aqua;
+}
+body{
+    min-height: 100vh;
+}
+
+img{
+    /* width: 150px;
+     */
+}
+
+h3{
+    display: none;
+    background-color: red;
+}
