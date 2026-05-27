@@ -15,6 +15,21 @@
     <label for="message">Message</label>
     <input type="text" id="message" placeholder="ecrire un message">
     <h3>Tu as gagné un iphone</h3>
+    <fieldset class="fieldset w-full max-w-xl">
+    <legend class="fieldset-legend">On réagit au keyup</legend>
+    <input id="input-exercice-keyup" type="text" class="input input-bordered w-full" placeholder="Type here" value="kebab" />
+    <p id="renderKeyboard"></p>
+    </fieldset>
+    <textarea name="ex" id="ex"></textarea>
+    <button id="submitBtn" type="submit" >Envoyer</button>
+
+            <fieldset class="fieldset w-full max-w-xl">
+            <legend class="fieldset-legend">On test setInterval (Système de compte à rebours)</legend>
+            <h2 id="timer-title" class="text-2xl font-bold text-center mb-4">TIMER</h2>
+            <button id="button-exercice-setInterval" class="btn btn-soft btn-primary">Démarrer le timer</button>
+        </fieldset>     
+        <div id="map"></div>
     <script src="reaction_click.js"></script>
+    
 </body>
 </html>
