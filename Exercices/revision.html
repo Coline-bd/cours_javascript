@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="revision.css">
+    <title>Révision</title>
+</head>
+<body>
+    <header>
+        <h1>Révisions JS</h1>
+        <nav id="navBar">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" id="menuBurger"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+            <ul id="menuList">
+                <li><a href="#">Réaction click</a></li>
+                <li><a href="#">Connexion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="barScroll"></div>
+        <section >
+            <h2>Changer de classe avec ClassLit</h2>
+            <p id="classList">Changez moi !</p>
+            <button id="addClass" type="button">Ajouter</button>
+            <button id="suppClass" type="button">Supprimer</button>
+            <button id="toggleClass" type="button">Toggle</button>
+        </section>
+        <section>
+            <h2>Changer le contenu au click</h2>
+            <p id="clickChange">Transformez moi !</p>
+        </section>
+        <section>
+            <h2>Capter l'event : click pour me voir apparaître</h2>
+            <div id="capterDiv"></div>
+        </section>
+        <section>
+            <h2>Réagir au focus (et blur) + localstorage</h2>
+            <input type="text" name="" id="inputFocus">
+            <button id="submitBtn" type="submit">Envoyer</button>
+            <p id="inputText"></p>
+        </section>
+        <section>
+            <h2 id="timer">Timer</h2>
+            <button id="timerBtn" type="button">Go</button>
+        </section>
+        <section>
+            <h2>Regex</h2>
+            <form action="#">
+                <label for="user">Pseudo</label>
+                <input type="text" name="" id="user">
+                <label for="mail">Mail</label>
+                <input type="email" name="" id="mail">
+                <label for="mdp">Mot de passe</label>
+                <input type="password" name="" id="mdp">
+            </form>
+            <ul id="errormsg"></ul>
+        </section>
+    </main>
+    <footer></footer>
+    <script type="module" src="revision.js"></script>
+</body>
+</html>
